@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <title>Aspirapolvere con dock di ricarica 3D</title>
+  <link rel="stylesheet" href="style.css" />
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.153.0/build/three.module.js",
+      "three/examples/jsm/": "https://cdn.jsdelivr.net/npm/three@0.153.0/examples/jsm/"
+    }
+  }
+  </script>
+</head>
+<body>
+  <div id="canvas-container"></div>
+
+  <button id="playAnimations" style="display:none;">Estrai aspirapolvere</button>
+  <button id="resetAnimation" style="display:none; margin-top: 10px;">Reset Animazione</button>
+
+  <div id="loader">
+    <div id="progressBar"></div>
+  </div>
+  <div id="loadingText">Caricamento modello... 0%</div>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
