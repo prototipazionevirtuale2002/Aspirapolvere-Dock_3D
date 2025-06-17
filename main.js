@@ -21,9 +21,13 @@ function init() {
 
   camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 1000);
 
-  renderer = new THREE.WebGLRenderer({ antialias: true });
+  // Canvas trasparente con alpha true
+  renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
   renderer.setSize(window.innerWidth, window.innerHeight);
-  renderer.setClearColor(0x777777); // <-- sfondo grigio più chiaro
+
+  // Sfondo trasparente (nero con alpha 0)
+  renderer.setClearColor(0x000000, 0);
+
   container.appendChild(renderer.domElement);
 
   const ambientLight = new THREE.AmbientLight(0xffffff, 0.8);
@@ -134,14 +138,12 @@ resetBtn.addEventListener('click', () => {
   mixer.setTime(0);
 
   actions.forEach(action => {
-    const clip = action.getClip();
-
     action.enabled = true;
     action.paused = true;
     action.reset();
-    action.play();     // forza l'applicazione del primo frame
+    action.play();
   });
 
-  mixer.setTime(0);     // assicura che il tempo sia 0
-  actions.forEach(action => action.stop()); // non farle ripartire
+  mixer.setTime(0);
+  actions.forEach(action => action.stop());
 });

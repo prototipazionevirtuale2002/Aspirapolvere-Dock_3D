@@ -1,9 +1,15 @@
 body, html {
-  margin: 0; padding: 0; width: 100vw; height: 100vh; overflow: hidden;
-  background-color: #777;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
   font-family: Arial, sans-serif;
   color: white;
   user-select: none;
+
+  /* Sfondo sfumato grigio chiaro a scuro */
+  background: linear-gradient(to bottom, #dddddd, #888888);
 }
 
 #canvas-container {
@@ -13,8 +19,7 @@ body, html {
   position: relative;
 }
 
-#playAnimations,
-#resetAnimation {
+#playAnimations, #resetAnimation {
   position: absolute;
   top: 10px;
   left: 10px;
@@ -26,15 +31,17 @@ body, html {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  user-select: none;
 }
 
 #resetAnimation {
-  top: 50px; /* posizionato sotto il primo */
+  top: 50px; /* sotto il primo bottone */
 }
 
 #loader {
   position: absolute;
-  top: 50%; left: 50%;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   width: 60%;
   height: 20px;
