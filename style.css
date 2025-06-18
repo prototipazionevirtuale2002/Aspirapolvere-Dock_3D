@@ -23,11 +23,11 @@ body, html {
 #resetAnimation {
   position: absolute;
   z-index: 10;
-  width: 460px;              /* Adatto a 'estrai aspirapolvere' */
+  width: 460px;
   padding: 20px 40px;
   font-size: 40px;
-  background: #4aaeb7;       /* ✅ Nuovo colore */
-  color: #333333;
+  background: #333333;       /* ✅ Colore pulsante */
+  color: #EEEEEE;            /* ✅ Colore testo */
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -62,7 +62,7 @@ body, html {
 #progressBar {
   height: 100%;
   width: 0%;
-  background: #4aaeb7;       /* Coordinato con i pulsanti */
+  background: #333333;       /* Coordinato con i pulsanti */
   transition: width 0.3s ease;
 }
 
