@@ -26,8 +26,8 @@ body, html {
   width: 460px;
   padding: 20px 40px;
   font-size: 40px;
-  background: #333333;       /* ✅ Colore pulsante */
-  color: #EEEEEE;            /* ✅ Colore testo */
+  background: #333333;       /* Pulsante */
+  color: #EEEEEE;            /* Testo */
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -62,7 +62,7 @@ body, html {
 #progressBar {
   height: 100%;
   width: 0%;
-  background: #333333;       /* Coordinato con i pulsanti */
+  background: #EEEEEE;       /* ✅ Visibile sul fondo scuro */
   transition: width 0.3s ease;
 }
 
