@@ -19,23 +19,30 @@ body, html {
   position: relative;
 }
 
-#playAnimations, #resetAnimation {
+#playAnimations,
+#resetAnimation {
   position: absolute;
-  top: 10px;
-  left: 10px;
   z-index: 10;
-  padding: 8px 16px;
-  font-size: 16px;
-  background: #28a745;
-  color: white;
+  width: 460px;              /* Adatto a 'estrai aspirapolvere' */
+  padding: 20px 40px;        /* 2,5x rispetto all'originale */
+  font-size: 40px;           /* 2,5x rispetto all'originale */
+  background: #00c2d1;       /* Azzurro acqua */
+  color: #333333;            /* Testo grigio scuro */
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  text-align: center;
   user-select: none;
 }
 
+#playAnimations {
+  top: 10px;
+  left: 10px;
+}
+
 #resetAnimation {
-  top: 50px; /* sotto il primo bottone */
+  top: 110px; /* sotto il primo bottone */
+  left: 10px;
 }
 
 #loader {
@@ -55,7 +62,7 @@ body, html {
 #progressBar {
   height: 100%;
   width: 0%;
-  background: #28a745;
+  background: #00c2d1; /* Coordinato con i pulsanti */
   transition: width 0.3s ease;
 }
 
