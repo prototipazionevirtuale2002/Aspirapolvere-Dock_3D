@@ -26,7 +26,7 @@ body, html {
   width: 460px;              /* Adatto a 'estrai aspirapolvere' */
   padding: 20px 40px;        /* 2,5x rispetto all'originale */
   font-size: 40px;           /* 2,5x rispetto all'originale */
-  background: #00c2d1;       /* Azzurro acqua */
+  background: #7daeb1;       /* ✅ Nuovo colore */
   color: #333333;            /* Testo grigio scuro */
   border: none;
   border-radius: 5px;
@@ -62,7 +62,7 @@ body, html {
 #progressBar {
   height: 100%;
   width: 0%;
-  background: #00c2d1; /* Coordinato con i pulsanti */
+  background: #7daeb1;       /* Coordinato con i pulsanti */
   transition: width 0.3s ease;
 }
 
