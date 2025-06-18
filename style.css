@@ -24,10 +24,10 @@ body, html {
   position: absolute;
   z-index: 10;
   width: 460px;              /* Adatto a 'estrai aspirapolvere' */
-  padding: 20px 40px;        /* 2,5x rispetto all'originale */
-  font-size: 40px;           /* 2,5x rispetto all'originale */
-  background: #7daeb1;       /* ✅ Nuovo colore */
-  color: #333333;            /* Testo grigio scuro */
+  padding: 20px 40px;
+  font-size: 40px;
+  background: #4aaeb7;       /* ✅ Nuovo colore */
+  color: #333333;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -41,7 +41,7 @@ body, html {
 }
 
 #resetAnimation {
-  top: 110px; /* sotto il primo bottone */
+  top: 110px;
   left: 10px;
 }
 
@@ -62,7 +62,7 @@ body, html {
 #progressBar {
   height: 100%;
   width: 0%;
-  background: #7daeb1;       /* Coordinato con i pulsanti */
+  background: #4aaeb7;       /* Coordinato con i pulsanti */
   transition: width 0.3s ease;
 }
 
